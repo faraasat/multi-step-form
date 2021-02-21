@@ -1,0 +1,57 @@
+.form-one {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-one__root {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.form-one__head {
+  font-family: 'Pacifico', cursive;
+  font-size: 45px;
+  color: teal;
+  font-weight: bolder;
+  text-shadow: 0px 0px 4px rgb(255, 153, 0);
+  margin-block: 0em;
+}
+
+.form-one__para {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 19px;
+  color: black;
+  font-weight: bolder;
+  margin-block: 0em;
+}
+
+.form-one__col {
+  width: 45%;
+}
+
+.form-one__col .MuiFormHelperText-root {
+  font-size: 12px;
+  font-family: serif;
+  color: red;
+  text-shadow: none;
+}
+
+.form-one__col p {
+  font-family: 'Pacifico', cursive;
+  color: wheat;
+  text-shadow: 0px 0px 2px rgba(1, 1, 1, 1);
+  font-weight: bolder;
+  width: 45%;
+  font-size: 28px;
+}
+
+.form-one__root label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

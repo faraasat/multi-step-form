@@ -1,11 +1,12 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import FormStepperComponent from "./components/form-stepper/form-stepper.component";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>    
-    </div>
+    <section>
+      <FormStepperComponent />
+    </section>
   );
 }
 

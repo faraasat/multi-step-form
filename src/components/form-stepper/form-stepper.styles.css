@@ -1,0 +1,32 @@
+.form-stepper__root {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.form-stepper__root .MuiStepper-root {
+    width: 100%;
+}
+
+.form-stepper__forms {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-stepper__forms-form {
+    width: 79%;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
