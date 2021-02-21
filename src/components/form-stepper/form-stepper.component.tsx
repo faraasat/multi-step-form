@@ -13,11 +13,17 @@ import "./form-stepper.styles.css";
 import FormOneComponent from "../form-one/form-one.component";
 import FormTwoComponent from "../form-two/form-two.component";
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
-import PersonIcon from "@material-ui/icons/Person";
+import FormThreeComponent from "../form-three/form-three.component";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCheckCircle,
+  faInfo,
+  faShareAlt,
+} from "@fortawesome/free-solid-svg-icons";
 
 const ColorLineConnector = withStyles({
   alternativeLabel: {
-    top: 22,
+    top: 30,
   },
   active: {
     "& $line": {
@@ -71,8 +77,8 @@ const ColorStepIcons = (props: StepIconProps) => {
 
   const icons: { [index: string]: React.ReactElement } = {
     1: <VerifiedUserIcon />,
-    2: <PersonIcon />,
-    3: <VideoLabelIcon />,
+    2: <FontAwesomeIcon icon={faShareAlt} />,
+    3: <FontAwesomeIcon icon={faInfo} />,
   };
 
   return (
@@ -118,7 +124,14 @@ const getStepForm = (
         />
       );
     case 2:
-      return "Form 2";
+      return (
+        <FormThreeComponent
+          activeStep={activeStep}
+          handleBack={handleBack}
+          handleNext={handleNext}
+          steps={steps}
+        />
+      );
     default:
       return "Unknown step";
   }
@@ -155,8 +168,9 @@ const FormStepperComponent = () => {
       </Stepper>
       <div className="form-stepper__forms">
         {activeStep === steps.length ? (
-          <div>
-            <Typography>All steps completed - you&apos;re finished</Typography>
+          <div className="form-stepper__forms-form form-stepper__forms-form__true">
+            <FontAwesomeIcon icon={faCheckCircle} />
+            <Typography>You Have Completed the form successfully!</Typography>
             <Button onClick={handleReset}>Reset</Button>
           </div>
         ) : (

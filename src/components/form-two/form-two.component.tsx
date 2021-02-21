@@ -155,7 +155,7 @@ const FormTwoComponent: React.FC<IFormOne> = ({
               id="twitter"
               label="Twitter Account"
               fullWidth
-              placeholder="https://twitter.com/max_adam"
+              placeholder="e.g. https://twitter.com/max_adam"
               variant="outlined"
               onChange={formik.handleChange}
               value={formik.values.twitter}
@@ -175,7 +175,7 @@ const FormTwoComponent: React.FC<IFormOne> = ({
               id="linkedIn"
               label="LinkedIn Account"
               fullWidth
-              placeholder="https://linkedin.com/in/max_adam"
+              placeholder="e.g. https://linkedin.com/in/max_adam"
               variant="outlined"
               onChange={formik.handleChange}
               value={formik.values.linkedIn}
@@ -198,7 +198,7 @@ const FormTwoComponent: React.FC<IFormOne> = ({
               id="telegram"
               label="Telegram Account"
               fullWidth
-              placeholder="https://te.com/abc"
+              placeholder="e.g. https://te.com/abc"
               variant="outlined"
               onChange={formik.handleChange}
               value={formik.values.telegram}
