@@ -1,4 +1,4 @@
-# 👨‍💻 React Shopping Basket.
+# 👨‍💻 React Multi-Step Form.
 ## 📽 A project based on Panacloud React Bootcamp [Project 10].
 
 ### ⚒ Project Demo:
